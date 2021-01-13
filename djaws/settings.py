@@ -32,7 +32,7 @@ SECRET_KEY = creds['DJAWS']['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://ec2-34-209-131-122.us-west-2.compute.amazonaws.com']
 
 
 # Application definition
