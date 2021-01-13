@@ -59,7 +59,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'testproject.urls'
+ROOT_URLCONF = 'djaws.urls'
 
 TEMPLATES = [
     {
@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'testproject.wsgi.application'
+WSGI_APPLICATION = 'djaws.wsgi.application'
 
 
 # Database
@@ -88,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'testdatabase',
         'USER': 'root',
-        'PASSWORD': 'P@ssw0rd1',
+        'PASSWORD': creds['DJAWS']['MYSQLPASS'],
         'HOST': 'localhost',
         'PORT': '3306',
     }
