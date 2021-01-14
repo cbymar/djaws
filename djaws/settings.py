@@ -16,18 +16,18 @@ from pathlib import Path
 import yaml
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-HOME = '/var/www'
+# HOME = '/var/www'
 # local path
-CREDS_FILE = os.path.join(HOME + '/credconf.yaml')
+# CREDS_FILE = os.path.join(HOME + '/credconf.yaml')
 # pull creds from credconf file
-with open(CREDS_FILE, 'r') as f:
-    creds = yaml.load(f, Loader=yaml.FullLoader)
+#with open(CREDS_FILE, 'r') as f:
+#    creds = yaml.load(f, Loader=yaml.FullLoader)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = creds['DJAWS']['SECRET_KEY']
+SECRET_KEY = '%(rjqifsfn9!4p^msfsp!icjvsfsdfd$vsfkmd4sf0csdfwmcc9q-t3&dsds&e+(ihspd(h-l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
