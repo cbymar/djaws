@@ -16,7 +16,7 @@ from pathlib import Path
 import yaml
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-HOME = os.path.expanduser('~')
+HOME = '/var/www'
 # local path
 CREDS_FILE = os.path.join(HOME + '/credconf.yaml')
 # pull creds from credconf file

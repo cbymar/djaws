@@ -12,6 +12,7 @@ import sys
 
 from django.core.wsgi import get_wsgi_application
 
+sys.path.append('/var/www')
 sys.path.append('/var/www/djaws')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djaws.settings")
 
